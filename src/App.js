@@ -2,13 +2,15 @@ import React from "react";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Say from "./Say";
+import EventPractice from "./EventPractice";
 
 const App = () => {
   return (
     <>
-      <MyComponent /> <br />
+      <MyComponent favoriteNumber={26}> 리액트</MyComponent> <br />
       <Counter /> <br />
-      <Say />
+      <Say /> <br />
+      <EventPractice />
     </>
   );
 };
