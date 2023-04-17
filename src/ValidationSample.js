@@ -1,20 +1,23 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./ValidationSample.css";
 
 const ValidationSample = () => {
   const [password, setPassword] = useState("");
   const [clicked, setClicked] = useState(false);
   const [validated, setValidated] = useState(false);
+  const inputEl = useRef(null);
   const handleChange = (e) => {
     setPassword(e.target.value);
   };
   const handleButtonClick = () => {
     setClicked(true);
     setValidated(password === "0000" ? true : false);
+    inputEl.current.focus();
   };
   return (
     <div>
       <input
+        ref={inputEl}
         type="password"
         value={password}
         onChange={handleChange}
