@@ -3,6 +3,7 @@ import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Say from "./Say";
 import EventPractice from "./EventPractice";
+import ValidationSample from "./ValidationSample";
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       <MyComponent favoriteNumber={26}> 리액트</MyComponent> <br />
       <Counter /> <br />
       <Say /> <br />
-      <EventPractice />
+      <EventPractice /> <br />
+      <ValidationSample />
     </>
   );
 };
